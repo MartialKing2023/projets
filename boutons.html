@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Ici, on veut creer 20 touches numerotees de 1 a 20.
+    A chaque clic d'un bouton, on se verra s'afficher son 
+    numero dans la boite de dialogue -->
+    <section class="touches">
+        <button class="bouton">1</button>
+        <button class="bouton">2</button>
+        <button class="bouton">3</button>
+        <button class="bouton">4</button>
+        <button class="bouton">5</button>
+        <button class="bouton">6</button>
+        <button class="bouton">7</button>
+        <button class="bouton">8</button>
+        <button class="bouton">9</button>
+        <button class="bouton">10</button>
+        <button class="bouton">11</button>
+        <button class="bouton">12</button>
+        <button class="bouton">13</button>
+        <button class="bouton">14</button>
+        <button class="bouton">15</button>
+        <button class="bouton">16</button>
+        <button class="bouton">17</button>
+        <button class="bouton">18</button>
+        <button class="bouton">19</button>
+        <button class="bouton">20</button>
+    </section>
+
+    <script>
+        //On accede au conteneur de toutes les touches
+        let touche = document.querySelector('.touches');
+        touche.addEventListener('click', function(e){
+            //On utilise 'target' car elle renvoie l'element qui
+            // est a l'origine du declenchement de l'evenement.
+            //Enfin, on recupere son contenu a l'aide de 'innerHTML'.
+            alert(e.target.innerHTML);
+        })
+    </script>
+</body>
+</html>
